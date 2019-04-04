@@ -5,7 +5,7 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wextra -Wpedantic -fstrict-aliasi
 
 find_package(Threads REQUIRED)
 
-include_directories(src)
+include_directories(navx)
 
-add_subdirectory(src)
+add_subdirectory(navx)
 add_subdirectory(examples)
