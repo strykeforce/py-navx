@@ -1,7 +1,7 @@
 # py-navx
 
 Adaptation of [FRC900/navXTimeSync](https://github.com/FRC900/navXTimeSync) for
-use on Raspberry Pi vision co-processor.
+use with Python 3 on Raspberry Pi vision co-processor.
 
 ## Prerequisites
 
