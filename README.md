@@ -1,7 +1,7 @@
 # py-navx
 
-Adaptation of [FRC900/navXTimeSync](https://github.com/FRC900/navXTimeSync) for
-use on Raspberry Pi vision co-processor.
+Adaptation of [kauailabs/navxmxp](https://github.com/kauailabs/navxmxp) by way of [FRC900/navXTimeSync](https://github.com/FRC900/navXTimeSync) for
+use with Python 3 on Raspberry Pi vision co-processor.
 
 ## Preparing the FRCVision Raspberry Pi
 
@@ -38,3 +38,9 @@ timestamp = ahrs.get_last_sensor_timestamp()
 
 print("timestamp = {}".format(timestamp))
 ```
+
+## License
+
+The MIT license.
+
+Original navX source code is Copyright (c) 2015 Kauai Labs, Inc. and is under the MIT license.
