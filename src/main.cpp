@@ -23,6 +23,34 @@ PYBIND11_MODULE(py_navx, m) {
         .def("get_last_sensor_timestamp", &AHRS::GetLastSensorTimestamp, R"pbdoc(
         Returns the sensor timestamp corresponding to the last sample retrieved
         from the sensor.
+        )pbdoc")
+        .def("get_pitch", &AHRS::GetPitch, R"pbdoc(
+        Returns the current pitch value (in degrees, from -180 to 180) reported
+        by the sensor.
+
+        Pitch is a measure of rotation around the X Axis.
+        )pbdoc")
+        .def("get_roll", &AHRS::GetRoll, R"pbdoc(
+        Returns the current roll value (in degrees, from -180 to 180) reported
+        by the sensor.
+
+        Roll is a measure of rotation around the X Axis.
+        )pbdoc")
+        .def("get_yaw", &AHRS::GetYaw, R"pbdoc(
+        Returns the current yaw value (in degrees, from -180 to 180) reported
+        by the sensor.
+
+        Yaw is a measure of rotation around the Z Axis (which is perpendicular
+        to the earth).  Note that the returned yaw value will be offset by a
+        user-specified offset value; this user-specified offset value is set by
+        invoking the zeroYaw() method.
+        )pbdoc")
+        .def("zero_yaw", &AHRS::ZeroYaw, R"pbdoc(
+        Sets the user-specified yaw offset to the current yaw value reported by
+        the sensor.
+
+        This user-specified yaw offset is automatically subtracted from
+        subsequent yaw values reported by the getYaw() method.
         )pbdoc");
 
 #ifdef VERSION_INFO
