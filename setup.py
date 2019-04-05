@@ -56,7 +56,7 @@ class CMakeBuild(build_ext):
 
 setup(
     name="py_navx",
-    version="0.1.0",
+    version="0.2.0",
     author="Jeff Hutchison",
     author_email="jeff@jeffhutchison.com",
     description="Python bindings for navX library",
