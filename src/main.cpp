@@ -95,7 +95,7 @@ PYBIND11_MODULE(py_navx, m) {
         This count should increase at the same rate indicated by the configured
         update rate.
         )pbdoc")
-        .def("get_update_count", &AHRS::GetLastSensorTimestamp, R"pbdoc(
+        .def("get_last_sensor_timestamp", &AHRS::GetLastSensorTimestamp, R"pbdoc(
         Returns the sensor timestamp corresponding to the last sample retrieved
         from the sensor.
         )pbdoc")

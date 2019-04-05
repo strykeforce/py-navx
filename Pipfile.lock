@@ -1,0 +1,25 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "f17a0665bbdb14c25a57cb050d967cbbe905a80eb429e8b0f6d9007c97f049dc"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.6"
+        },
+        "sources": [
+            {
+                "name": "pypi",
+                "url": "https://pypi.org/simple",
+                "verify_ssl": true
+            }
+        ]
+    },
+    "default": {
+        "py-navx": {
+            "editable": true,
+            "path": "."
+        }
+    },
+    "develop": {}
+}
